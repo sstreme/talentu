@@ -1,0 +1,33 @@
+<div class="container" style="height: 100vh">
+  <p class="descripcion pt-5">¿Buscas mas información?</p>
+  <p style="font-family: 'Josefin Sans', sans-serif; font-size: 1.5rem">Recíbela por correo</p>
+  <div class="row">
+    <div class="col-sm-7">
+      <form (submit)="enviar()">
+        <mat-form-field class="w-50">
+          <input type="text" name="nombre" [(ngModel)]="userData.nombre" ngModel matInput placeholder="Nombre y Apellido" required>
+          <mat-error >Por Favor intruduzca su nombre y apellido</mat-error>
+        </mat-form-field>
+        <mat-form-field class="pl-5 w-50">
+          <input type="email" name="email" [(ngModel)]="userData.email" matInput ngModel email placeholder="Correo" required>
+          <mat-error>Favor de escribir una dirección de correo válida</mat-error>
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <input matInput type="number" [(ngModel)]="userData.telefono" name="telefono" id="telefono" placeholder="Teléfono">
+        </mat-form-field>
+        <mat-form-field class="w-100">
+          <textarea matInput name="mensaje" [(ngModel)]="userData.mensaje" ngModel id="mensaje" rows="10" placeholder="Escriba su mensaje" required></textarea>
+          <mat-error>Favor de introducir mensaje</mat-error>
+        </mat-form-field>
+        <button class="btn btn-envio" type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="col-sm-5">
+      <b class="datos">Contacto</b><br>
+      <p class="datos"><img style="width: 2.5rem; height: 2.5rem;" src="assets/imagenes/location.ico" alt=""> San Pedro Garza García</p><br>
+      <p class="datos"><img style="width: 2.5rem; height: 2.5rem;" src="assets/imagenes/mobile.ico" alt=""> 8110197144</p><br>
+      <p class="datos"><img style="width: 2.5rem; height: 2.5rem;" src="assets/imagenes/whats.ico" alt=""> 8110197144</p>
+      <p class="datos"><img style="width: 2.5rem; height: 2.5rem;" src="assets/imagenes/email.ico" alt=""> contacto@talentu.com.mx</p>
+    </div>
+  </div>
+</div>
