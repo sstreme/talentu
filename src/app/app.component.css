@@ -3,7 +3,7 @@
     font-family: 'NeutraTextBook';
 }
 #toolbar{
-    
+
 }
 .toolbar{
     background-color: white;   
@@ -18,5 +18,15 @@
 .datos{
     font-family: 'NeutraTextLight', sans-serif;
     font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-text{
+        font-size: 1rem;
+    }
+    #logo{
+        width: 66.5px;
+        height: 61.5px;
+    }  
 }
 

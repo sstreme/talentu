@@ -6,3 +6,33 @@
     font-family: 'NeutraTextLight', sans-serif;
     font-size: 2rem;
 }
+
+@media (max-width: 768px) {
+    .descripcion{
+        font-size: 1.5rem;
+    }
+    .datos{
+        font-size: 1rem;
+    }
+    .titulo{
+        height: 95.5px;
+        line-height: 95.5px;
+        font-size: 25px;
+    }
+    #integridad{
+        width: 117px;
+        height: 117.5px;
+    }
+    #servicio{
+        width: 117px;
+        height: 117.5px;
+    }
+    #compromiso{
+        width: 117px;
+        height: 117.5px;
+    }
+    #responsabilidad{
+        width: 117px;
+        height: 117.5px;
+    }    
+}
