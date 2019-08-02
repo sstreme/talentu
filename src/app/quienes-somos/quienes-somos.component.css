@@ -1,0 +1,16 @@
+.descripcion{
+    font-family: 'NeutraTextLight', sans-serif;
+    font-size: 2.5rem;
+}
+.datos{
+    font-family: 'NeutraTextLight', sans-serif;
+    font-size: 2rem;
+}
+.titulo{
+    height: 191px;
+    color: white;
+    background-color: #692e45;
+    font-family: 'NeutraTextBold';
+    line-height: 191px;
+    font-size: 50px;
+}
