@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MailServiceService } from '../mail-service.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -8,20 +10,24 @@ import { Component, OnInit } from '@angular/core';
 export class ContactoComponent implements OnInit {
 
   userData = {
-    nombre:'',
+    nombre: '',
     email: '',
     telefono: 0,
     mensaje: ''
   }
 
-  constructor() { }
+  constructor(private _mail: MailServiceService) { }
 
   ngOnInit() {
   }
 
-  enviar(){
-    console.log(this.userData);
-    
+  enviar(contacto: NgForm) {
+    this._mail.enviarCorreo(this.userData).subscribe(
+      res => {
+        console.log('Se ha enviado correo');
+        contacto.resetForm();
+      }
+    )
   }
 
 }

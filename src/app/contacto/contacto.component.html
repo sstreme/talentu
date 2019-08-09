@@ -3,7 +3,7 @@
   <p class="datos">Recíbela por correo</p>
   <div class="row">
     <div class="col-sm-7">
-      <form (submit)="enviar()">
+      <form (submit)="enviar(contacto)" #contacto="ngForm">
         <mat-form-field class="w-50">
           <input type="text" name="nombre" [(ngModel)]="userData.nombre" ngModel matInput placeholder="Nombre y Apellido" required>
           <mat-error >Por Favor intruduzca su nombre y apellido</mat-error>
