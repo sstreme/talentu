@@ -8,6 +8,6 @@ export class MailServiceService {
 
   constructor(private _http: HttpClient) { }
   enviarCorreo(datos){
-    return this._http.post('http://localhost:3000/contacto',datos);
+    return this._http.post('https://talentu-mail.herokuapp.com/contacto',datos);
   }
 }
