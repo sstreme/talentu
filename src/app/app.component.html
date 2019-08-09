@@ -1,34 +1,28 @@
+<header id="top"></header>
 <nav id="toolbar" class="navbar navbar-expand-sm navbar-light sticky-top toolbar">
-  <a pageScroll href="#slider1">
+  <a pageScroll href="#top">
     <picture>
       <source media="(max-width: 768px)" srcset="assets/imagenes/logo_chico.png">
       <img id="logo" src="assets/imagenes/log.png" alt="" class="navbar-brand">
     </picture>
   </a>
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item"><a pageScroll href="#quienes-somos" class="nav-link navbar-text">¿Quiénes
-        somos?</a></li>
-    <li class="nav-item"><a pageScroll href="#que-hacemos" class="nav-link navbar-text">¿Qué hacemos?</a></li>
-    <li class="nav-item"><a pageScroll href="#nuestra-historia" class="nav-link navbar-text">Nuestra Historia</a></li>
-    <li class="nav-item"><a pageScroll href="#valores" class="nav-link navbar-text">Valores</a></li>
-    <li class="nav-item"><a pageScroll href="#contacto" class="nav-link navbar-text">Contacto</a></li>
+    <li class="nav-item"><a pageScroll pageScrollSpeed="120" pageScrollOffset="130" href="#quienes-somos"
+        class="nav-link navbar-text">¿Quiénes somos?</a></li>
+    <li class="nav-item"><a pageScroll pageScrollOffset="130" href="#que-hacemos" class="nav-link navbar-text">¿Qué hacemos?</a></li>
+    <li class="nav-item"><a pageScroll pageScrollOffset="130" href="#nuestra-historia"
+        class="nav-link navbar-text">Nuestra Historia</a></li>
+    <li class="nav-item"><a pageScroll pageScrollOffset="130" href="#valores" class="nav-link navbar-text">Valores</a>
+    </li>
+    <li class="nav-item"><a pageScroll pageScrollOffset="130" href="#contacto" class="nav-link navbar-text">Contacto</a>
+    </li>
   </ul>
 </nav>
 <main role="main">
   <img id="slider1" class="w-100" src="assets/imagenes/Slider-1.png" alt="">
-  <div id="quienes-somos">
-    <app-quienes-somos></app-quienes-somos>
-  </div>
-  <div id="que-hacemos">
-    <app-que-hacemos></app-que-hacemos>
-  </div>
-  <div id="nuestra-historia">
-    <app-nuestra-historia></app-nuestra-historia>
-  </div>
-  <div id="valores">
-    <app-valores></app-valores>
-  </div>
-  <div id="contacto">
-    <app-contacto></app-contacto>
-  </div>
+  <app-quienes-somos></app-quienes-somos>
+  <app-que-hacemos></app-que-hacemos>
+  <app-nuestra-historia></app-nuestra-historia>
+  <app-valores></app-valores>
+  <app-contacto></app-contacto>
 </main>
