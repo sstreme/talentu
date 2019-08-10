@@ -12,6 +12,7 @@ export class ContactoComponent implements OnInit {
   userData = {
     nombre: '',
     email: '',
+    telefono: '',
     mensaje: ''
   }
 
