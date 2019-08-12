@@ -30,12 +30,14 @@
     var mediaquery = window.matchMedia("(max-width: 768px)");
     if (mediaquery.matches) {
       $('.scroll').scrollOffset({
-        offset: 200
+        offset: 200,
+        duration: 2400
       });
     }
     else {
       $('.scroll').scrollOffset({
-        offset: 130
+        offset: 130,
+        duration: 2400
       });
     }
   });
