@@ -14,9 +14,7 @@
     line-height: 191px;
     font-size: 50px;
 }
-#quienes-somos{
-    scroll-padding: 0;
-}
+
 
 @media (max-width: 768px) {
     .descripcion{
