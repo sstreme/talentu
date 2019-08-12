@@ -27,14 +27,17 @@
 </body>
 <script>
   $(function () {
-    if (window.matchMedia("(max-width: 768px)")) {
+    var mediaquery = window.matchMedia("(max-width: 768px)");
+    if (mediaquery.matches) {
       $('.scroll').scrollOffset({
         offset: 200
       });
     }
-    $('.scroll').scrollOffset({
-      offset: 130
-    });
+    else {
+      $('.scroll').scrollOffset({
+        offset: 130
+      });
+    }
   });
 </script>
 
