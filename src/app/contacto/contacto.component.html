@@ -5,29 +5,56 @@
     <div class="col-sm-7">
       <form (submit)="enviar(contacto)" #contacto="ngForm">
         <mat-form-field class="w-50">
-          <input type="text" name="nombre" [(ngModel)]="userData.nombre" ngModel matInput placeholder="Nombre y Apellido" required>
-          <mat-error >Por Favor intruduzca su nombre y apellido</mat-error>
+          <input type="text" name="nombre" [(ngModel)]="userData.nombre" ngModel matInput
+            placeholder="Nombre y Apellido" required>
+          <mat-error>Por Favor intruduzca su nombre y apellido</mat-error>
         </mat-form-field>
         <mat-form-field class="pl-5 w-50">
-          <input type="email" name="email" [(ngModel)]="userData.email" matInput ngModel email placeholder="Correo" required>
+          <input type="email" name="email" [(ngModel)]="userData.email" matInput ngModel email placeholder="Correo"
+            required>
           <mat-error>Favor de escribir una dirección de correo válida</mat-error>
         </mat-form-field>
         <mat-form-field class="w-100">
-          <input matInput type="number" [(ngModel)]="userData.telefono" name="telefono" id="telefono" placeholder="Teléfono">
+          <input matInput type="number" [(ngModel)]="userData.telefono" name="telefono" id="telefono"
+            placeholder="Teléfono">
         </mat-form-field>
         <mat-form-field class="w-100">
-          <textarea matInput name="mensaje" [(ngModel)]="userData.mensaje" ngModel id="mensaje" rows="10" placeholder="Escriba su mensaje" required></textarea>
+          <textarea matInput name="mensaje" [(ngModel)]="userData.mensaje" ngModel id="mensaje" rows="10"
+            placeholder="Escriba su mensaje" required></textarea>
           <mat-error>Favor de introducir mensaje</mat-error>
         </mat-form-field>
         <button class="btn btn-envio" type="submit">Enviar</button>
       </form>
     </div>
     <div class="col-sm-5">
-      <b class="datos">Contacto</b><br>
-      <p class="datos"><img class="icono" src="assets/imagenes/location.ico" alt=""> San Pedro Garza García</p><br>
-      <p class="datos"><img class="icono" src="assets/imagenes/mobile.ico" alt=""> 8110197144</p><br>
-      <p class="datos"><img class="icono" src="assets/imagenes/whats.ico" alt=""> 8110197144</p>
-      <p class="datos"><img class="icono" src="assets/imagenes/email.ico" alt=""> contacto@talentu.com.mx</p>
+      <div class="row">
+        <div class="col-sm-5"><p class="datos">Contacto</p></div>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-1"><img class="icono" src="assets/imagenes/location.ico" alt=""></div>
+        <div class="col"><p class="datos">Av. Gómez Morín #1105</p></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col"><p class="datos">Col. Carrizalejo</p></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col"><p class="datos">San Pedro Garza García, Nuevo León</p></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"><img class="icono" src="assets/imagenes/mobile.ico" alt=""></div>
+        <div class="col"><p class="datos">8110197144</p></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"><img class="icono" src="assets/imagenes/whats.ico" alt=""></div>
+        <div class="col"><p class="datos"> 8110197144</p></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"><img class="icono" src="assets/imagenes/email.ico" alt=""></div>
+        <div class="col"><p class="datos">contacto@talentu.com.mx</p></div>
+      </div>
     </div>
   </div>
 </div>
